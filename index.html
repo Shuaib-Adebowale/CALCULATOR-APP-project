@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CALCULATOR-APP</title>
+</head>
+<body>
+    <!-- calcu -->
+ <div class="calcu">
+
+    <!-- calcu-1 -->
+    <div class="calcu-1">
+
+        <!-- h1 -->
+        <h1>Calc</h1>
+
+        <!-- theme -->
+        <div class="theme">
+            <h2>Theme</h2>
+
+            <!-- nm-1-list -->
+            <div class="num-1-list">
+
+                <!-- num -->
+                <div class="num">
+
+                    <!-- nu1-3 -->
+                    <li id="n1">1</li>
+                    <li id="n1-2">2</li>
+                    <li id="n1-3">3</li>
+                </div>
+
+                <!-- border -->
+                <div class="border" id="border">
+
+                    <!-- ra and bi-num-1-3 -->
+                <input type="radio" required class="ra" id="bg-num-1">
+                <input type="radio" required class="ra" id="bg-num-2">
+                <input type="radio" required class="ra" id="bg-num-3">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- input -->
+    <div class="input">
+        <!-- number -->
+        <input type="text" name="number" id="result" required class="number">
+    </div>
+
+    <!-- caculator-1 and cal-bg -->
+    <div class="caculator-1" id="cal-bg">
+        
+        <!-- numb,nu1, nu1-9, del, add, sub.divide,mult, reset and equal -->
+        <div class="numb">
+            <input type="button" onclick="nucalcu('7')" class="nu1 " id="nu7" value="7"></input>
+            <input type="button" onclick="nucalcu('8')" class="nu1 " id="nu8" value="8"></input>
+            <input type="button" onclick="nucalcu('9')" class="nu1 " id="nu9" value="9"></input>
+            <input type="button" onclick="del()" class="nu1 " id="del" value="DEL" style="background-color: #567fe6;color: #ffff;"></input>
+        </div>
+
+        <div class="numb">
+            <input  type="button" onclick="nucalcu('4')"  class="nu1 " id="nu4" value="4"></input>
+            <input  type="button" onclick="nucalcu('5')"  class="nu1 " id="nu5" value="5"></input>
+            <input  type="button" onclick="nucalcu('6')"  class="nu1 " id="nu6" value="6"></input>
+            <input  type="button" onclick="nucalcu('+')"  class="nu1 " id="add" value="+"></input>
+        </div>
+
+        <div class="numb">
+            <input type="button" onclick="nucalcu('1')"  class="nu1 " id="nu1" value="1"></input>
+            <input type="button" onclick="nucalcu('2')" class="nu1 " id="nu2" value="2"></input>
+            <input type="button" onclick="nucalcu('3')" class="nu1 " id="nu3" value="3"></input>
+            <input type="button" onclick="nucalcu('-')" class="nu1 " id="sub" value="-"></input>
+        </div>
+
+        <div class="numb">
+            <input type="button" onclick="nucalcu('.')" class="nu1" id="period" value="."></input>
+            <input type="button" onclick="nucalcu('0')" class="nu1" id="zero" value="0"></input>
+            <input type="button" onclick="nucalcu('/')" class="nu1" id="divide" value="/"></input>
+            <input type="button" onclick="nucalcu('*')" class="nu1" id="mult" value="*"></input>
+        </div>
+        <div class="numb-1">
+            <input type="button" onclick="clr()" class="nu2" id="reset" value="RESET" style="background-color: hsl(223, 74%, 62%);"></input>
+            <input type="button" onclick="solve()" class="nu2" id="equal" value="=" style="background-color: #d03f2f;"></input>
+        </div>
+    </div>
+ </div>   
+ <script src="script.js"></script>
+</body>
+</html>
